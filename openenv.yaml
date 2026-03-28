@@ -1,0 +1,16 @@
+name: support-ticket-env
+version: 1.0
+
+api:
+  reset: GET /reset
+  step: POST /step
+  state: GET /state
+
+models:
+  state: app.models.State
+  action: app.models.Action
+
+tasks:
+  - name: easy
+  - name: medium
+  - name: hard
